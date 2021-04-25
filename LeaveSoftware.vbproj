@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6DC08035-9672-40F4-8320-DCFCD2D05735}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LeaveSoftware</RootNamespace>
+    <AssemblyName>LeaveSoftware</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LeaveSoftware.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LeaveSoftware.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main_Page.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="All_Leaves_Report.aspx.designer.vb">
+      <DependentUpon>All_Leaves_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All_Leaves_Report.aspx.vb">
+      <DependentUpon>All_Leaves_Report.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_GlobalResources\ResourceAR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceAR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckSession.vb" />
+    <Compile Include="DuplicateBadgeNumber.aspx.designer.vb">
+      <DependentUpon>DuplicateBadgeNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuplicateBadgeNumber.aspx.vb">
+      <DependentUpon>DuplicateBadgeNumber.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DuplicateInitialValue.aspx.designer.vb">
+      <DependentUpon>DuplicateInitialValue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuplicateInitialValue.aspx.vb">
+      <DependentUpon>DuplicateInitialValue.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeNotExist.aspx.designer.vb">
+      <DependentUpon>EmployeeNotExist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeNotExist.aspx.vb">
+      <DependentUpon>EmployeeNotExist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="error_Page.aspx.designer.vb">
+      <DependentUpon>error_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error_Page.aspx.vb">
+      <DependentUpon>error_Page.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Increments.aspx.designer.vb">
+      <DependentUpon>Increments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Increments.aspx.vb">
+      <DependentUpon>Increments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertInitialValues.aspx.designer.vb">
+      <DependentUpon>InsertInitialValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertInitialValues.aspx.vb">
+      <DependentUpon>InsertInitialValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertNewEmployee.aspx.designer.vb">
+      <DependentUpon>InsertNewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertNewEmployee.aspx.vb">
+      <DependentUpon>InsertNewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Main_Page.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Main_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Page.aspx.designer.vb">
+      <DependentUpon>Main_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Normal.aspx.designer.vb">
+      <DependentUpon>Normal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Normal.aspx.vb">
+      <DependentUpon>Normal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="No_Initial_Value.aspx.designer.vb">
+      <DependentUpon>No_Initial_Value.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="No_Initial_Value.aspx.vb">
+      <DependentUpon>No_Initial_Value.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PartTime.aspx.designer.vb">
+      <DependentUpon>PartTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartTime.aspx.vb">
+      <DependentUpon>PartTime.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.aspx.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SearchByName_2.aspx.designer.vb">
+      <DependentUpon>SearchByName_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchByName_2.aspx.vb">
+      <DependentUpon>SearchByName_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sick.aspx.designer.vb">
+      <DependentUpon>Sick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sick.aspx.vb">
+      <DependentUpon>Sick.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SickHalfSalary.aspx.designer.vb">
+      <DependentUpon>SickHalfSalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SickHalfSalary.aspx.vb">
+      <DependentUpon>SickHalfSalary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ResourceAR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ResourceAR.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="All_Leaves_Report.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="No_Initial_Value.aspx" />
+    <Content Include="SearchByName_2.aspx" />
+    <Content Include="DuplicateBadgeNumber.aspx" />
+    <Content Include="DuplicateInitialValue.aspx" />
+    <Content Include="EmployeeNotExist.aspx" />
+    <Content Include="error_Page.aspx" />
+    <Content Include="Images\Leaves.jpg" />
+    <Content Include="Images\Leaves2.jpg" />
+    <Content Include="Images\Leaves3.jpg" />
+    <Content Include="Images\Leaves4.jpg" />
+    <Content Include="Increments.aspx" />
+    <Content Include="InsertInitialValues.aspx" />
+    <Content Include="InsertNewEmployee.aspx" />
+    <Content Include="Reports.aspx" />
+    <Content Include="SickHalfSalary.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="css\Master.css" />
+    <Content Include="Normal.aspx" />
+    <Content Include="PartTime.aspx" />
+    <Content Include="Sick.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1828</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

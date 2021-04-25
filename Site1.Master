@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="LeaveSoftware.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+   <link href="css/Master.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+ </head>
+<body>
+    
+    <div class="image">
+        <img alt="" src="Images/Leaves4.jpg"/>
+    </div>
+    
+    <form id="Form1" runat="server">
+        <div class="menu">
+            <asp:Menu ID="navigate" runat="server" BackColor="#CCCCFF" 
+                DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" 
+                Font-Size="Large" ForeColor="Gray" Orientation="Horizontal" 
+                StaticSubMenuIndent="10px" BorderStyle="Solid">
+                <StaticSelectedStyle BackColor="#FFCC66" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicHoverStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                <DynamicMenuStyle BackColor="#CC3300" ForeColor ="White" />
+                <DynamicItemTemplate>
+                    <%# Eval("Text") %>
+                </DynamicItemTemplate>
+                <DynamicSelectedStyle BackColor="#FFCC66" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" BackColor="Maroon" />
+                <DataBindings>
+                    <asp:MenuItemBinding NavigateUrl="~/Increments.aspx" 
+                        TextField="تحديث الاجازات" />
+                </DataBindings>
+                <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                <Items>
+                 <%--       
+                    <asp:MenuItem NavigateUrl="~/Normal.aspx" Text="الاجازات الاعتيادية" 
+                        Value="1"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/PartTime.aspx" Text="الاجازات الزمنية" 
+                        Value="2"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Sick.aspx" Text="المرضية براتب تام" 
+                            Value="3"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/SickHalfSalary.aspx" Text="المرضية بنصف راتب" 
+                        Value="4"></asp:MenuItem>          
+                    <asp:MenuItem NavigateUrl="~/Main_Page.aspx" Text="الرئيسية" Value="الرئيسية">
+                    </asp:MenuItem>--%><asp:MenuItem NavigateUrl="~/Increments.aspx" Text="تحديث الرصيد" 
+                        Value="تحديث الرصيد"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/InsertNewEmployee.aspx" Text="اضافة موظف جديد" 
+                        Value="اضافة موظف جديد"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/InsertInitialValues.aspx" 
+                        Text="اضافة قيمة ابتدائية" Value="اضافة قيمة ابتدائية"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Reports.aspx" Text="التقارير" Value="5">
+                        <asp:MenuItem Text="كل اجازات الموظف" Value="6" 
+                            NavigateUrl="~/All_Leaves_Report.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                          <asp:MenuItem NavigateUrl="~/SearchByName_2.aspx" Text="البحـث" 
+                        Value="البحـث"></asp:MenuItem>
+                    
+                    
+                    <asp:MenuItem NavigateUrl="~/Main_Page.aspx" Text="الرئيسية" Value="الرئيسية">
+                    </asp:MenuItem>
+                    
+                    
+                    <asp:MenuItem Text="الخروج" Value="الخروج" NavigateUrl="~/logout.aspx"></asp:MenuItem>
+                    
+                    
+                </Items>
+                <StaticItemTemplate>
+                    <%# Eval("Text") %>
+                </StaticItemTemplate>
+            </asp:Menu>
+        </div>
+        
+         <asp:ContentPlaceHolder ID="CPHContent" runat="server">       
+           
+         </asp:ContentPlaceHolder>
+     
+     </form>
+    
+             
+</body>
+</html>
